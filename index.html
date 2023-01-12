@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 01 Lógica</title>
+</head>
+
+<body>
+    <header>
+        <h1>Estrutura de dados simples</h1>
+        <h2>O que é lógica da programação?</h2>
+    </header>
+    <main>
+        <p>Lógica da programação: Definir os passos e a ordem necessária para alcançarmos um objetivo. É a chave para
+            aprender qualquer linguagem. </p>
+
+        <p>
+            Um software segue uma série de operações em uma ordem definida para que ao fim o usuário alcance o seu
+            objetivo. A lógica é antes de tudo um modo específico de organizar operações e chegar ao fim com um problema
+            resolvido.
+        </p>
+
+        <h2>JavaScript</h2>
+        <p>É uma Linguagem de programação interpretada estruturada, de script em alto nível com tipagem dinâmica fraca e
+            multiparadigma. Juntamente com HTML e CSS, o JavaScript é uma das três principais tecnologias da World Wide
+            Web.
+
+        <ul>
+            <li>Tipagem dinâmica fraca: Não é necessário informar o tipo das variáveis, além disso, a linguagem faz
+                conversões entre os tipos automaticamente.</li>
+            <li> Multiparadigma: suportam vários paradigmas de programação. </li>
+        </ul>
+        </p>
+
+        <h2>Função nativa do JS </h2>
+        <p>vocês vão ver muito sobre função em todo o nosso progresso no módulo 2, mas FUNÇÃO é um procedimento de
+            JavaScript - um conjunto de instruções que executa uma tarefa ou calcula um valor.
+        <ul>
+            <li>Functions declaration (Função de declaração) </li>
+            <li>Functions expression (Função de expressão) </li>
+            <li>Arrow Functions (Função de flecha)</li>
+            <li>Functions constructor (Função construtora)</li>
+            <li>Generator Functions (Função geradora)</li>
+        </ul>
+        </p>
+
+        <h2>O que é o console.log ?? </h2>
+        <p> É uma função nativa do JS que exibe uma mensagem no console do navegador. O acesso a esse console auxilia no
+            processo de debugar, que é basicamente analisar o processo de Entrada > Processamento > Saída de partes do
+            código. Será nosso melhor amigo durante a jornada com JS.
+        </p>
+
+    </main>
+
+    <h2>Por que colocar a tag script no final da body e não no head como o css?? </h2>
+
+    <p>
+        Porque Colocar um script no head garante que ele seja executado antes de qualquer elemento ser colocado no body.
+        Isso significa que ele garantidamente estará presente quando a página for "montada", ou seja, qualquer código
+        que precise estar presente na hora de processar o body com certeza já estará pronto para agir.
+        A desvantagem é que o usuário só vai ver uma página em branco até que o script termine de executar.
+    </p>
+
+    <h2> DECLARANDO VARIÁVEIS: VAR , LET , CONST </h2>
+    <p>Antes de começarmos a falar sobre variáveis, vamos falar sobre o que é escopo, vamos ouvir isso algumas vezes na
+        nossa vida de programador.</p>
+    <p>
+        Escopo significa onde essas variáveis poderão ser utilizadas. Varias declarações têm escopo global ou
+        função/escopo local.
+    </p>
+    <p>
+        O escopo é global é quando uma variável é declarada FORA DE UMA FUNÇÃO. Isso significa que qualquer variável
+        declarada fora de um bloco de função está disponível para uso em todo o código.
+
+    </p>
+    <p>
+        Escopo local é quando uma variável é declarada DENTRO DE UMA FUNÇÃO, em bloco.
+    </p>
+
+    <h2> VARIÁVEIS </h2>
+
+    <p>variável (VAR, LET OU CONST) + nome da variável (EX: ALUNO) = tipo de dados (numérico, "textual / string" ou
+        boleando (verdadeiro ou falso) )
+    <p>Ex¹: let aluno = "Gabriela" (textual, chamados de string)</p>
+    <p>EX²: let idade = 18 (numérico)</p>
+    <p>EX³ let amarelo = true (boleando)</p>
+    </p>
+
+    <p>
+        São estruturas importantes em qualquer programação, independentemente da linguagem que se utilize para
+        implementar os códigos ou programas. Elas podem ser entendidas como uma caixinha, onde os dados são armazenados
+        temporariamente ou em definitivo e que são manipuladas durante a execução do programa.
+    <ul>
+        <li>VAR: Antes do advento do ES6, as declarações de var eram a regra. Havia problemas associados à declaração de
+            variáveis com var, no entanto. Por isso, foi necessário o surgimento de novas formas de declarar variáveis.
+            *Podem ser atualizadas e declaradas novamente dentro de seu escopo.
+
+        </li>
+
+        <li>LET: Declara uma variável local, mais usada, é a preferida entre os programadores para declaração de
+            variáveis. Uma variável declarada em um bloco com let só está disponível para uso dentro desse bloco.
+            *Podem ser atualizadas, mas não podem ser declaradas novamente. </li>
+
+
+        <li>CONST: Não pode ser atualizado nem declarado novamenteman, têm valores constantes. Declarações com const
+            compartilham algumas semelhanças com as declarações com let.Declarações com const têm escopo de bloco.
+            *Não podem ser atualizadas nem declaradas novamente.
+
+        </li>
+    </ul>
+    </p>
+
+    <h2>Tipos de erros ou mensagens</h2>
+
+    <ul>
+        <li> type=null; //dado de tipo nulo, inexistente</li>
+
+        <li> type=undefined; //dado ainda não definido </li>
+
+        <li> let type=NaN; //dado não numérico</li>
+    </ul>
+
+
+    <h2>
+        Nomes de variáveis não podem começar com números e símbolos exceto $ e _ </h2>
+    <ul>
+        <li> var $nome = 'Isa'</li>
+        <li> let _nome = "Alice"</li>
+        <li>const nome = `Pedro`</li>
+    </ul>
+
+
+    <h2>  TemplateString  `${}` </h2>
+    <p>  let alunos = `Esses são os alunos do vnw : ${aluno} e ${aluno2}`</p>
+
+    <h2>Operadores de Comparação</h2>
+    <p> = atribuição de tipo de dado</p>
+    <p> == (comparador de igualdade) verificacao de valor comparador de igualdade</p>
+    <p> === (estritamente igual) verficacao de valor e tipo estritamente igual</p>
+    <p> != verifica se os valores comparados são diferentes</p>
+    <p> !== verifica se os valores e tipos são diferentes</p>
+    <p> > maior</p>
+    <p>
+        < menor</p>
+            <p> >= maior igual que</p>
+            <p>
+                <= menor igual que</p>
+
+<h2>Operadores Lógicos</h2>
+<p>&& (and) comparar se ambas as condições forem verdadeiras</p>
+<p>|| (ou) compara se um OU outro são verdadeiros</p>
+<p> ! (not) inverte um valor que é dado a ele</p>
+
+
+                    <script src="script.js">	</script>
+</body>
+
+</html>
